@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para a barra de menus */
+        ul.menu-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            overflow: hidden;
+            /* Adicione as propriedades de flexbox para centralizar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul.menu-bar li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.menu-bar li a:hover {
+            background-color: #555;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        h2,
+        p {
+            text-align: left;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .author {
+            display: inline-block;
+            text-align: center;
+            /* Centralize o conteúdo */
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .author-info {
+            margin-top: 10px;
+            /* Espaçamento entre a imagem e o nome */
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
+</head>
+
+<body>
+    <!-- Barra de menus -->
+    <ul class="menu-bar">
+        <li><a href="https://beatrizbonetto.github.io/Home/">Início</a></li>
+       <li><a href="https://beatrizbonetto.github.io/Produto/">Produtos</a></li>
+        <li><a href="https://beatrizbonetto.github.io/orcamento/#orcamento">Orçamento</a></li>
+        <li><a href="https://beatrizbonetto.github.io/informacoes/">Informações</a></li>
+        <li><a href="https://beatrizbonetto.github.io/autores/">Autores</a></li>
+    </ul>
+    <div class="container my-5">
+        
+        <div class="text-center">
+            <img src="https://github.com/BeatrizBonetto/projeto_html_2023/assets/142846833/488b30b8-a932-48eb-aca4-28f4c3255958"
+                alt="Logo minimalista para utilização na capa do projeto" class="img-fluid">
+        </div>
+    <p>&#128241; Solicite seu orçament via Whatsapp <a href="https://wa.me/55191234567890">Clique aqui</a> para
+        mais informações</p>
+            <p>ou</p>
+
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+
+                form {
+                    max-width: 400px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                input[type="text"],
+                textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+
+                input[type="submit"] {
+                    background-color: #007BFF;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+
+                input[type="submit"]:hover {
+                    background-color: #0056b3;
+                }
+            </style>
+            </head>
+
+            <body>
+                <p>Preencha o formulário para solicitar um orçamento.</p>
+
+    <form action="email.php" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone" required>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required>
+
+        <label for="pedido">Pedido</label>
+        <textarea id="pedido" name="pedido" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar orçamento">
+    </form>
+            </body>
