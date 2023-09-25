@@ -4,8 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para a barra de menus */
+        ul.menu-bar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            overflow: hidden;
+            /* Adicione as propriedades de flexbox para centralizar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul.menu-bar li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.menu-bar li a:hover {
+            background-color: #555;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        h2,
+        p {
+            text-align: left;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .author {
+            display: inline-block;
+            text-align: center;
+            /* Centralize o conteúdo */
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .author-info {
+            margin-top: 10px;
+            /* Espaçamento entre a imagem e o nome */
+        }
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="autores.css">
     <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
 </head>
 
@@ -29,7 +98,6 @@
     <div class="container">
         <h3 class="mt-4">Autores</h3>
         <div class="row justify-content-center">
-            <!--Autor1-->
             <div class="author">
                 <a href="https://github.com/BeatrizBonetto">
                     <img src="https://avatars.githubusercontent.com/u/142846833?s=400&u=74bf2d3521a969a16d6573336e27d3830c63d048&v=4"
@@ -40,9 +108,6 @@
                     </div>
                 </a>
             </div>
-            <!--Autor1-->
-
-                <!--Autor2-->
             <div class="author">
                 <a href="https://github.com/MatheusRibeiro">
                     <img src="https://github.com/MatheusRibeir0/MatheusRibeir0/blob/main/foto.jpeg?raw=true"
@@ -53,9 +118,6 @@
                     </div>
                 </a>
             </div>
-            <!--Autor2-->
-
-            <!--Autor3-->
             <div class="author">
                 <a href="https://github.com/deividmoretto">
                     <img src="https://avatars.githubusercontent.com/u/75542165?s=400&u=1550acedc789159f7b09c6123d0bf0b6c36bf407&v=4"
@@ -64,7 +126,6 @@
                         <p>Deivid Moretto</p>
                         <p>Matricula: 202303281579</p>
                     </div>
-                    <!--Autor3-->
                 </a>
             </div>
         </div>
