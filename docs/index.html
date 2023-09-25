@@ -4,77 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Estilos para a barra de menus */
-        ul.menu-bar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            overflow: hidden;
-            /* Adicione as propriedades de flexbox para centralizar */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        ul.menu-bar li a {
-            display: block;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul.menu-bar li a:hover {
-            background-color: #555;
-        }
-
-        ul {
-            text-align: left;
-        }
-
-        h2,
-        p {
-            text-align: left;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .author {
-            display: inline-block;
-            text-align: center;
-            /* Centralize o conteúdo */
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .profile-image {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .author-info {
-            margin-top: 10px;
-            /* Espaçamento entre a imagem e o nome */
-        }
-    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="autores.css">
     <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
 </head>
 
@@ -84,59 +15,59 @@
         <li><a href="./Home.html">Início</a></li>
        <li><a href="./Pages/produtos.html">Produtos</a></li>
         <li><a href="./Pages/orcamento.html">Orçamento</a></li>
-        <li><a href="./Pages/informacoes">Informações</a></li>
-        <li><a href="./Pages/autores">Autores</a></li>
+        <li><a href="./Pages/informacoes.html">Informações</a></li>
+        <li><a href="./Pages/autores.html">Autores</a></li>
     </ul>
+    <!--Fim Barra de Menu -->
 
     <div class="container my-5">
 
         <div class="text-center">
             <img src="https://github.com/BeatrizBonetto/projeto_html_2023/assets/142846833/488b30b8-a932-48eb-aca4-28f4c3255958"
                 alt="Logo minimalista para utilização na capa do projeto" class="img-fluid">
-        </div>
+        <div class="text-center">Este projeto foi pensado e desenvolvido por alunos do segundo semestre do curso de Análise e desenvolvimento de sistemas para a aula de Desenvolvimento web em HTML5, Css, JavaScript e Php</p>
+    <div class="container">
+        <h3 class="mt-4">Autores</h3>
+        <div class="row justify-content-center">
+            <!--Autor1-->
+            <div class="author">
+                <a href="https://github.com/BeatrizBonetto">
+                    <img src="https://avatars.githubusercontent.com/u/142846833?s=400&u=74bf2d3521a969a16d6573336e27d3830c63d048&v=4"
+                        alt="Beatriz Faccioli Bonetto" class="profile-image">
+                    <div class="author-info">
+                        <p>Beatriz Faccioli Bonetto</p>
+                        <p>Matricula: 202302381189</p>
+                    </div>
+                </a>
+            </div>
+            <!--Autor1-->
 
-        <div class="text-center mt-10">
-            <span class="badge badge-secondary">SEJA BEM VINDO AO NOSSO SITE</span><span
-                class="badge badge-success">ESTAMOS EM DESENVOLVIMENTO <span class="emoji" class="badge badge-success">😀</span>
-            </span>
+                <!--Autor2-->
+            <div class="author">
+                <a href="https://github.com/MatheusRibeiro">
+                    <img src="https://github.com/MatheusRibeir0/MatheusRibeir0/blob/main/foto.jpeg?raw=true"
+                        alt="Matheus Ribeiro" class="profile-image">
+                    <div class="author-info">
+                        <p>Matheus Ribeiro</p>
+                        <p>Matricula: 202303664206</p>
+                    </div>
+                </a>
+            </div>
+            <!--Autor2-->
 
-            <style>
-                .emoji {
-                    font-size: 13px;
-                }
-            </style>
-        </div>
-
-        <h3 class="mt-4">Objetivo do projeto</h3>
-        <p>
-            O objetivo principal deste projeto é criar um site simples, completo e interativo para o usuário que deseja
-            realizar cotações de coffee breaks e pedidos para festas e eventos pessoais e corporativos, além de
-            consultar preços de produtos pré produzidos.
-        </p>
-
-        <h3 class="mt-4">Funcionalidades do projeto</h3>
-        <ul>
-            <li>
-                O cliente poderá encontrar os telefones para contato, endereço e horário de funcionamento na aba "<a
-                href="./Pages/informacoes.html">Informações</a>".
-            </li>
-            <li>
-                O cliente poderá entrar em contato via whatsapp clicando no ícone do whatsapp lincado a aba "<a
-                    href="./Pages/orcamento.html">Orçamento</a>".
-            </li>
-            <li>
-                O cliente poderá consultar o cardápio com os preços dos produtos na aba "<a
-                    href="./Pages/produtos.html">Produtos</a>".
-            </li>
-            <li>
-                O cliente poderá solicitar orçamentos diferenciados preenchendo um cadastro na aba "<a
-                    href="./Pages/orcamento.html">Orçamento</a>".
-            </li>
-        </ul>
+            <!--Autor3-->
+            <div class="author">
+                <a href="https://github.com/deividmoretto">
+                    <img src="https://avatars.githubusercontent.com/u/75542165?s=400&u=1550acedc789159f7b09c6123d0bf0b6c36bf407&v=4"
+                        alt="Deivid Moretto" class="profile-image">
+                    <div class="author-info">
+                        <p>Deivid Moretto</p>
+                        <p>Matricula: 202303281579</p>
+                    </div>
+                    <!--Autor3-->
+                </a>
             </div>
         </div>
     </div>
 </div>
 </body>
-
-</html>
