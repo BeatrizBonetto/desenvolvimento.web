@@ -1,0 +1,68 @@
+/* Estilos para a barra de menus */
+ul.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+    /* Adicione as propriedades de flexbox para centralizar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.menu-bar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu-bar li a:hover {
+    background-color: #555;
+}
+
+ul {
+    text-align: left;
+}
+
+h2,
+p {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.author {
+    display: inline-block;
+    text-align: center;
+    /* Centralize o conteúdo */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.author-info {
+    margin-top: 10px;
+    /* Espaçamento entre a imagem e o nome */
+}
