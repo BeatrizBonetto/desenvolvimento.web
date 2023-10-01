@@ -4,8 +4,7 @@ ul.menu-bar {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  overflow-x: auto; /* Adicione rolagem horizontal */
-  white-space: nowrap; /* Evite que os itens quebrem para a próxima linha */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,8 +38,8 @@ ul.menu-bar li a:hover {
 
 .profile-image {
   border-radius: 50%;
-  width: 100px; /* Reduza o tamanho da imagem */
-  height: 100px; /* Reduza o tamanho da imagem */
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
 
@@ -51,11 +50,12 @@ ul.menu-bar li a:hover {
 
 /* Estilos para o formulário */
 form {
-  max-width: 100%; /* Ocupa toda a largura da tela */
+  max-width: 100%;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centralize horizontalmente */
 }
 
 label {
@@ -71,7 +71,7 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  font-size: 16px; /* Ajuste o tamanho da fonte para melhor legibilidade */
+  font-size: 16px;
 }
 
 textarea {
@@ -85,9 +85,26 @@ input[type="submit"] {
   padding: 10px 15px;
   border-radius: 3px;
   cursor: pointer;
-  width: 100%; /* Ocupa toda a largura da tela */
+  width: 100%;
 }
 
 input[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+/* Media query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  ul.menu-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul.menu-bar li {
+    padding: 5px 0;
+  }
+
+  .profile-image {
+    width: 50px;
+    height: 50px;
+  }
 }
