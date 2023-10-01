@@ -11,6 +11,10 @@ ul.menu-bar {
     align-items: center;
 }
 
+ul.menu-bar li {
+    margin: 0 10px; /* Espaçamento entre os itens do menu */
+}
+
 ul.menu-bar li a {
     display: block;
     color: rgb(0, 0, 0);
@@ -75,9 +79,8 @@ body {
         align-items: stretch;
     }
 
-    ul.menu-bar li a {
-        padding: 10px;
-        /* Reduza o espaçamento entre os itens do menu */
+    ul.menu-bar li {
+        margin: 5px 0; /* Reduza o espaçamento entre os itens do menu */
     }
 
     .container {
