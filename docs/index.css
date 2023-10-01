@@ -11,10 +11,6 @@ ul.menu-bar {
     align-items: center;
 }
 
-ul.menu-bar li {
-    margin: 0 10px; /* Espaçamento entre os itens do menu */
-}
-
 ul.menu-bar li a {
     display: block;
     color: rgb(0, 0, 0);
@@ -73,22 +69,7 @@ body {
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
-    ul.menu-bar {
-        flex-direction: column;
-        /* Alinhe verticalmente os itens do menu */
-        align-items: stretch;
-    }
-
     ul.menu-bar li {
-        margin: 5px 0; /* Reduza o espaçamento entre os itens do menu */
-    }
-
-    .container {
-        margin-top: 10px;
-    }
-
-    .author {
-        margin: 5px;
-        padding: 5px;
+        margin: 5px; /* Adicione margem para dispositivos móveis */
     }
 }
