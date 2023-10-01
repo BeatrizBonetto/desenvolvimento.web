@@ -7,6 +7,7 @@
     max-height: 50px; /* Altura máxima desejada */
     overflow-x: auto; /* Adicionar barra de rolagem horizontal, se necessário */
     white-space: nowrap; /* Evitar que os itens da lista quebrem para a próxima linha */
+    color: #000000; /* Cor do texto preto */
 }
 
 .menu-bar li {
@@ -16,7 +17,7 @@
 
 .menu-bar li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000; /* Cor do texto preto */
     font-weight: bold;
     font-size: 18px;
 }
@@ -65,7 +66,7 @@ form textarea {
 
 form input[type="submit"] {
     background-color: #ffffff;
-    color: #fff;
+    color: #000000; /* Cor do texto preto */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
