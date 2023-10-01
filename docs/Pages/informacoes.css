@@ -9,13 +9,21 @@ ul.menu-bar {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Defina uma altura máxima para evitar que a barra de rolagem apareça em telas grandes */
+    max-height: 60px; /* Ajuste conforme necessário */
+    /* Ative a rolagem horizontal apenas quando necessário */
+    overflow-x: auto;
+}
+
+ul.menu-bar li {
+    margin: 0 5px; /* Espaçamento entre os itens do menu */
 }
 
 ul.menu-bar li a {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px; /* Reduza o tamanho dos itens do menu */
     text-decoration: none;
 }
 
@@ -70,21 +78,9 @@ body {
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     ul.menu-bar {
-        flex-direction: column;
-        /* Alinhe verticalmente os itens do menu */
-        align-items: stretch;
-    }
-
-    ul.menu-bar li a {
-        padding: 10px; /* Reduza o tamanho dos itens do menu */
-    }
-
-    .container {
-        margin-top: 10px;
-    }
-
-    .author {
-        margin: 5px;
-        padding: 5px;
+        flex-direction: row; /* Reverta para o layout de linha */
+        justify-content: flex-start; /* Alinhe os itens à esquerda */
+        align-items: center;
+        overflow-x: auto; /* Ative a rolagem horizontal apenas quando necessário */
     }
 }
