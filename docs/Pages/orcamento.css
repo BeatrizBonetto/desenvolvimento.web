@@ -1,79 +1,71 @@
-/* Estilo para a barra de menus */
-.menu-bar {
+/* Estilos para a barra de menus */
+ul.menu-bar {
     list-style-type: none;
+    margin: 0;
     padding: 0;
     background-color: #ffffff;
+    /* Defina uma altura máxima desejada */
+    max-height: 50px;
+    overflow-x: auto; /* Adicione uma barra de rolagem horizontal se necessário */
+    /* Adicione as propriedades de flexbox para centralizar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; /* Impede que os itens quebrem para a próxima linha */
+}
+
+ul.menu-bar li a {
+    display: block;
+    color: rgb(0, 0, 0);
     text-align: center;
-    max-height: 50px; /* Altura máxima desejada */
-    overflow-x: auto; /* Adicionar barra de rolagem horizontal, se necessário */
-    white-space: nowrap; /* Evitar que os itens da lista quebrem para a próxima linha */
-    color: #000000; /* Cor do texto preto */
-}
-
-.menu-bar li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.menu-bar li a {
+    padding: 14px 16px;
     text-decoration: none;
-    color: #000000; /* Cor do texto preto */
-    font-weight: bold;
-    font-size: 18px;
 }
 
-/* Estilo para a barra de menus em telas menores (rolável) */
-@media (max-width: 768px) { /* Ajuste este valor para a largura desejada */
-    .menu-bar {
-        overflow-x: auto; /* Adicionar barra de rolagem horizontal em telas menores */
-        white-space: nowrap; /* Evitar que os itens quebrem para a próxima linha */
-    }
+ul.menu-bar li a:hover {
+    background-color: #555;
 }
 
-/* Estilo para o container */
+ul {
+    text-align: left;
+}
+
+h2,
+p {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
 .container {
     text-align: center;
+    margin-top: 20px;
 }
 
-/* Estilo para a imagem */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-}
-
-/* Estilo para o formulário */
-form {
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-form input[type="text"],
-form textarea {
-    width: 100%;
+.author {
+    display: inline-block;
+    text-align: center;
+    /* Centralize o conteúdo */
+    margin: 10px;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form input[type="submit"] {
-    background-color: #ffffff;
-    color: #000000; /* Cor do texto preto */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-form input[type="submit"]:hover {
-    background-color: #ffffff;
+.author-info {
+    margin-top: 10px;
+    /* Espaçamento entre a imagem e o nome */
 }
