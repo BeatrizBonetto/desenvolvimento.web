@@ -4,7 +4,8 @@ ul.menu-bar {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  overflow: hidden;
+  overflow-x: auto; /* Adicione rolagem horizontal */
+  white-space: nowrap; /* Evite que os itens quebrem para a próxima linha */
   display: flex;
   justify-content: center;
   align-items: center;
