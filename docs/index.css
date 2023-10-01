@@ -9,6 +9,10 @@ ul.menu-bar {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Adicione um overflow-x para criar uma barra de rolagem horizontal em dispositivos móveis */
+    overflow-x: scroll;
+    /* Defina uma altura máxima para evitar que a barra de rolagem apareça em telas grandes */
+    max-height: 60px; /* Ajuste conforme necessário */
 }
 
 ul.menu-bar li a {
@@ -69,7 +73,10 @@ body {
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
-    ul.menu-bar li {
-        margin: 5px; /* Adicione margem para dispositivos móveis */
+    ul.menu-bar {
+        flex-direction: column;
+        /* Alinhe verticalmente os itens do menu */
+        align-items: stretch;
+        overflow-x: auto; /* Ative a rolagem horizontal em dispositivos móveis */
     }
 }
