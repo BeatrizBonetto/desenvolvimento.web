@@ -91,7 +91,11 @@
     padding: 20px;
     background-color: var(--cor-de-fundo-container); /* Usando a variável para cor de fundo */
     border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais proeminente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar horizontalmente */
+    text-align: center;
   }
   
   /* Estilos para títulos abaixo do formulário */
@@ -99,6 +103,7 @@
     font-size: 24px;
     font-weight: bold;
     color: var(--cor-de-texto-titulo); /* Usando a variável para cor de texto do título */
+    margin-bottom: 10px; /* Espaçamento inferior para separar do parágrafo */
   }
   
   /* Estilos para parágrafos abaixo do formulário */
@@ -106,6 +111,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--cor-de-texto-geral); /* Usando a variável para cor de texto geral */
+    margin-bottom: 20px; /* Espaçamento inferior para separar dos botões */
   }
   
   /* Estilos para imagens abaixo do formulário */
@@ -113,6 +119,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 5px; /* Cantos arredondados para imagens */
+    margin-bottom: 20px; /* Espaçamento inferior para separar dos botões */
   }
   
   /* Estilos para botões abaixo do formulário */
