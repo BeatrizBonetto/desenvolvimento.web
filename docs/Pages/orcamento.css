@@ -1,125 +1,149 @@
-/* Estilos para a barra de menus */
-ul.menu-bar {
+:root {
+    --cor-de-fundo-menu: #1E1E1E; /* Fundo escuro */
+    --cor-de-texto-menu: #ffffff; /* Texto claro */
+    --cor-de-fundo-hover: #007BFF; /* Cor de destaque para hover */
+    --cor-de-texto-titulo: #333;
+    --cor-de-texto-geral: #666;
+    --cor-de-fundo-container: #f5f5f5;
+    --cor-de-fundo-botao: #007bff;
+    --cor-de-fundo-botao-hover: #0056b3;
+  }
+  
+  /* Estilos para a barra de menus */
+  ul.menu-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    /* Defina uma altura máxima desejada */
+    background-color: var(--cor-de-fundo-menu); /* Usando a variável para cor de fundo */
     max-height: 50px;
-    overflow-x: auto; /* Adicione uma barra de rolagem horizontal se necessário */
-    /* Adicione as propriedades de flexbox para centralizar */
+    overflow-x: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap; /* Impede que os itens quebrem para a próxima linha */
-}
-
-ul.menu-bar li a {
+    white-space: nowrap;
+  }
+  
+  ul.menu-bar li a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: var(--cor-de-texto-menu); /* Usando a variável para cor de texto */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-ul.menu-bar li a:hover {
-    background-color: #555;
-}
-
-ul {
+  }
+  
+  ul.menu-bar li a:hover {
+    background-color: var(--cor-de-fundo-hover); /* Usando a variável para cor de destaque */
+  }
+  
+  ul {
     text-align: left;
-}
-
-/* Estilos para títulos */
-h2 {
+  }
+  
+  /* Estilos para títulos */
+  h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333; /* Cor personalizada */
-}
-
-/* Estilos para parágrafos */
-p {
+    color: var(--cor-de-texto-titulo); /* Usando a variável para cor de texto do título */
+  }
+  
+  /* Estilos para parágrafos */
+  p {
     font-size: 16px;
     line-height: 1.5;
-    color: #666; /* Cor personalizada */
-}
-
-/* Adicione uma sombra sutil */
-.container {
+    color: var(--cor-de-texto-geral); /* Usando a variável para cor de texto geral */
+  }
+  
+  /* Adicione uma sombra sutil */
+  .container {
     text-align: center;
     margin-top: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Estilos para o autor */
-.author {
+  }
+  
+  /* Estilos para o autor */
+  .author {
     display: inline-block;
     text-align: center;
-    /* Centralize o conteúdo */
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adicione uma sombra sutil */
-}
-
-.profile-image {
+  }
+  
+  .profile-image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
-}
-
-.author-info {
+  }
+  
+  .author-info {
     margin-top: 10px;
     /* Espaçamento entre a imagem e o nome */
-}
-
-/* Estilos para elementos abaixo do formulário */
-
-/* Container que envolve os elementos abaixo do formulário */
-.container-baixo-do-formulario {
+  }
+  
+  /* Estilos para elementos abaixo do formulário */
+  
+  /* Container que envolve os elementos abaixo do formulário */
+  .container-baixo-do-formulario {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f5f5f5; /* Cor de fundo */
+    background-color: var(--cor-de-fundo-container); /* Usando a variável para cor de fundo */
     border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Estilos para títulos abaixo do formulário */
-.container-baixo-do-formulario h3 {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais proeminente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar horizontalmente */
+    text-align: center;
+  }
+  
+  /* Estilos para títulos abaixo do formulário */
+  .container-baixo-do-formulario h3 {
     font-size: 24px;
     font-weight: bold;
-    color: #333; /* Cor personalizada */
-}
-
-/* Estilos para parágrafos abaixo do formulário */
-.container-baixo-do-formulario p {
+    color: var(--cor-de-texto-titulo); /* Usando a variável para cor de texto do título */
+    margin-bottom: 10px; /* Espaçamento inferior para separar do parágrafo */
+  }
+  
+  /* Estilos para parágrafos abaixo do formulário */
+  .container-baixo-do-formulario p {
     font-size: 16px;
     line-height: 1.5;
-    color: #666; /* Cor personalizada */
-}
-
-/* Estilos para imagens abaixo do formulário */
-.container-baixo-do-formulario img {
+    color: var(--cor-de-texto-geral); /* Usando a variável para cor de texto geral */
+    margin-bottom: 20px; /* Espaçamento inferior para separar dos botões */
+  }
+  
+  /* Estilos para imagens abaixo do formulário */
+  .container-baixo-do-formulario img {
     max-width: 100%;
     height: auto;
     border-radius: 5px; /* Cantos arredondados para imagens */
-}
-
-/* Estilos para botões abaixo do formulário */
-.container-baixo-do-formulario .btn {
+    margin-bottom: 20px; /* Espaçamento inferior para separar dos botões */
+  }
+  
+  /* Estilos para caixas de resposta */
+  .resposta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar horizontalmente */
+    margin-bottom: 20px; /* Espaçamento inferior entre as caixas de resposta */
+  }
+  
+  /* Estilos para botões abaixo do formulário */
+  .container-baixo-do-formulario .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    background-color: var(--cor-de-fundo-botao); /* Usando a variável para cor de fundo do botão */
+    color: #fff;
     text-decoration: none;
     border: none;
-    border-radius: 5px; /* Cantos arredondados */
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Efeito de transição suave */
-}
-
-.container-baixo-do-formulario .btn:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
-}
+  }
+  
+  .container-baixo-do-formulario .btn:hover {
+    background-color: var(--cor-de-fundo-botao-hover); /* Usando a variável para cor de fundo do botão ao passar o mouse */
+  }
+  
