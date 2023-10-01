@@ -1,78 +1,125 @@
-/* Estilo para a barra de menus */
-.menu-bar {
+/* Estilos para a barra de menus */
+ul.menu-bar {
     list-style-type: none;
+    margin: 0;
     padding: 0;
     background-color: #ffffff;
+    /* Defina uma altura máxima desejada */
+    max-height: 50px;
+    overflow-x: auto; /* Adicione uma barra de rolagem horizontal se necessário */
+    /* Adicione as propriedades de flexbox para centralizar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; /* Impede que os itens quebrem para a próxima linha */
+}
+
+ul.menu-bar li a {
+    display: block;
+    color: rgb(0, 0, 0);
     text-align: center;
-    max-height: 50px; /* Altura máxima desejada */
-    overflow-x: auto; /* Adicionar barra de rolagem horizontal, se necessário */
-    white-space: nowrap; /* Evitar que os itens da lista quebrem para a próxima linha */
-}
-
-.menu-bar li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.menu-bar li a {
+    padding: 14px 16px;
     text-decoration: none;
-    color: #fff;
+}
+
+ul.menu-bar li a:hover {
+    background-color: #555;
+}
+
+ul {
+    text-align: left;
+}
+
+/* Estilos para títulos */
+h2 {
+    font-size: 24px;
     font-weight: bold;
-    font-size: 18px;
+    color: #333; /* Cor personalizada */
 }
 
-/* Estilo para a barra de menus em telas menores (rolável) */
-@media (max-width: 768px) { /* Ajuste este valor para a largura desejada */
-    .menu-bar {
-        overflow-x: auto; /* Adicionar barra de rolagem horizontal em telas menores */
-        white-space: nowrap; /* Evitar que os itens quebrem para a próxima linha */
-    }
+/* Estilos para parágrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Cor personalizada */
 }
 
-/* Estilo para o container */
+/* Adicione uma sombra sutil */
 .container {
     text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Estilo para a imagem */
-.img-fluid {
+/* Estilos para o autor */
+.author {
+    display: inline-block;
+    text-align: center;
+    /* Centralize o conteúdo */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adicione uma sombra sutil */
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.author-info {
+    margin-top: 10px;
+    /* Espaçamento entre a imagem e o nome */
+}
+
+/* Estilos para elementos abaixo do formulário */
+
+/* Container que envolve os elementos abaixo do formulário */
+.container-baixo-do-formulario {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Cor de fundo */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para títulos abaixo do formulário */
+.container-baixo-do-formulario h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Cor personalizada */
+}
+
+/* Estilos para parágrafos abaixo do formulário */
+.container-baixo-do-formulario p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666; /* Cor personalizada */
+}
+
+/* Estilos para imagens abaixo do formulário */
+.container-baixo-do-formulario img {
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    border-radius: 5px; /* Cantos arredondados para imagens */
 }
 
-/* Estilo para o formulário */
-form {
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-form input[type="text"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-}
-
-form input[type="submit"] {
-    background-color: #ffffff;
-    color: #fff;
+/* Estilos para botões abaixo do formulário */
+.container-baixo-do-formulario .btn {
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Cantos arredondados */
     cursor: pointer;
-    font-weight: bold;
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
 }
 
-form input[type="submit"]:hover {
-    background-color: #ffffff;
+.container-baixo-do-formulario .btn:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
 }
