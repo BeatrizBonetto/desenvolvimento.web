@@ -10,11 +10,15 @@ ul.menu-bar {
   align-items: center;
 }
 
+ul.menu-bar li {
+  text-align: center;
+  padding: 10px;
+}
+
 ul.menu-bar li a {
   display: block;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -22,33 +26,11 @@ ul.menu-bar li a:hover {
   background-color: #555;
 }
 
-ul {
-  text-align: left;
-}
-
-h2,
-p {
-  text-align: left;
-}
-
-h3 {
-  text-align: center;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  text-align: center;
-  margin-top: 20px;
-}
-
+/* Estilos para informações do autor */
 .author {
-  display: inline-block;
+  display: block;
   text-align: center;
-  /* Centralize o conteúdo */
-  margin: 10px;
+  margin: 10px auto;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -56,24 +38,19 @@ body {
 
 .profile-image {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 100px; /* Reduza o tamanho da imagem */
+  height: 100px; /* Reduza o tamanho da imagem */
   object-fit: cover;
 }
 
 .author-info {
   margin-top: 10px;
-  /* Espaçamento entre a imagem e o nome */
+  text-align: center;
 }
 
 /* Estilos para o formulário */
-body {
-  font-family: Arial, sans-serif;
-}
-
 form {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 100%; /* Ocupa toda a largura da tela */
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -93,6 +70,7 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  font-size: 16px; /* Ajuste o tamanho da fonte para melhor legibilidade */
 }
 
 textarea {
@@ -106,6 +84,7 @@ input[type="submit"] {
   padding: 10px 15px;
   border-radius: 3px;
   cursor: pointer;
+  width: 100%; /* Ocupa toda a largura da tela */
 }
 
 input[type="submit"]:hover {
