@@ -66,3 +66,29 @@ body {
     margin-top: 10px;
     /* Espaçamento entre a imagem e o nome */
 }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    ul.menu-bar {
+        flex-direction: column;
+        /* Alinhe verticalmente os itens do menu */
+        align-items: stretch;
+    }
+
+    ul.menu-bar li {
+        margin: 5px 0; /* Espaçamento entre os itens do menu */
+    }
+
+    ul.menu-bar li a {
+        padding: 10px; /* Reduza o tamanho dos itens do menu */
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+
+    .author {
+        margin: 5px;
+        padding: 5px;
+    }
+}
