@@ -122,6 +122,14 @@
     margin-bottom: 20px; /* Espaçamento inferior para separar dos botões */
   }
   
+  /* Estilos para caixas de resposta */
+  .resposta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar horizontalmente */
+    margin-bottom: 20px; /* Espaçamento inferior entre as caixas de resposta */
+  }
+  
   /* Estilos para botões abaixo do formulário */
   .container-baixo-do-formulario .btn {
     display: inline-block;
