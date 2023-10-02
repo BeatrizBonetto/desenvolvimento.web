@@ -4,10 +4,11 @@ ul.menu-bar {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: auto; /* Torna a barra de menus rolante horizontalmente */
+  white-space: nowrap; /* Evita que os itens quebrem em várias linhas */
 }
 
 ul.menu-bar li {
@@ -55,7 +56,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* Centralize horizontalmente */
+  margin: 0 auto;
 }
 
 label {
@@ -95,12 +96,12 @@ input[type="submit"]:hover {
 /* Media query para dispositivos móveis */
 @media screen and (max-width: 768px) {
   ul.menu-bar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Retorna à direção horizontal */
+    overflow-x: auto; /* Mantém a rolagem horizontal */
   }
 
   ul.menu-bar li {
-    padding: 5px 0;
+    padding: 10px;
   }
 
   .profile-image {
