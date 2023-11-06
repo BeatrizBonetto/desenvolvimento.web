@@ -1,42 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="produtos.css">
+    <link href="./protuto-materialize.css" type="text/css" rel="stylesheet">
     <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
+    <script src="./produtos.js"></script>
 </head>
-
 <body>
-  <!-- Barra de menus -->
-  <ul class="menu-bar">
-      <li><a href="../index.html">Início</a></li>
-     <li><a href="./produtos.html">Produtos</a></li>
-      <li><a href="./orcamento.html">Orçamento</a></li>
-      <li><a href="./informacoes.html">Informações</a></li>
-      <li><a href="./autores.html">Autores</a></li>
-  </ul>
+    <!-- Barra de menus -->
+    <ul class="menu-bar">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="./produtos.html">Produtos</a></li>
+        <li><a href="./orcamento.html">Orçamento</a></li>
+        <li><a href="./informacoes.html">Informações</a></li>
+        <li><a href="./autores.html">Autores</a></li>
+    </ul>
     <!-- Fim da barra de menus -->
 
+    <header>
+        <h1>Restaurante do Exemplo</h1>
+        <p>Um sabor para cada ocasião</p>
+    </header>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="https://github.com/BeatrizBonetto/Produto/assets/142846833/1558ef33-0982-4528-89c8-25f572466539" alt="Primeiro Slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://github.com/BeatrizBonetto/Produto/assets/142846833/1d0fdadd-122c-4420-92c9-04b801f0c6ec" alt="Segundo Slide">
-    </div>
-  </div>
-</div>
-<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="sr-only">Anterior</span>
-</a>
-<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="sr-only">Próximo</span>
-</a>
-</div>
+    <main>
+        <script type="text/javascript" src="./produtos.js"></script>
+
+        <div class="container center">
+            <form>
+                <div class="row">
+                    <fieldset style="border: 1px solid lightgrey; padding: 1em">
+                        <div class="col s10 l12">
+                            <!-- PRODUTOS -->
+                            <table class="responsive-table center">
+                                <tbody id="carrinho">
+                                    <tr class="center" id="produto1">
+                                        <td><img width="100px" src="img/computer.png"></td>
+                                        <td>Computador<br>R$500,00</td>
+                                        <!-- ADICIONAR AO CARRINHO -->
+                                        <td><div onclick="adicionarItem(1)" class="circle-add">+</div></td>
+                                        <td>
+                                            <p id="quantidade1">0</p>
+                                        </td>
+                                        <!-- REMOVER DO CARRINHO -->
+                                        <td><div onclick="removerItem(1)" class="circle-remove">-</div></td>
+                                        <td>
+                                            Total<br>R$<span id="total1">00,00</span>
+                                        </td>
+                                        <!-- REMOVER PRODUTO DA LISTA -->
+                                        <td><i onclick="removerProduto(1)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
+                                    </tr>
+                                    <tr id="produto2" id="produto2">
+                                        <td><img width="100px" src="img/plant.png"></td>
+                                        <td>Planta<br>R$5,00</td>
+                                        <!-- ADICIONAR AO CARRINHO -->
+                                        <td><div onclick="adicionarItem(2)" class="circle-add">+</div></td>
+                                        <td>
+                                            <p id="quantidade2">0</p>
+                                        </td>
+                                        <!-- REMOVER DO CARRINHO -->
+                                        <td><div onclick="removerItem(2)" class="circle-remove">-</div></td>
+                                        <td>
+                                            Total<br>R$<span id="total2">00,00</span>
+                                        </td>
+                                        <!-- REMOVER PRODUTO DA LISTA -->
+                                        <td><i onclick="removerProduto(2)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
+                                    </tr>
+                                    <tr id="produto3" id="produto3">
+                                        <td><img width="100px" src="img/lightsaber.png"></td>
+                                        <td>Lightsaber<br>R$3000,00</td>
+                                        <!-- ADICIONAR AO CARRINHO -->
+                                        <td><div onclick="adicionarItem(3)" class="circle-add">+</div></td>
+                                        <td>
+                                            <p id="quantidade3">0</p>
+                                        </td>
+                                        <!-- REMOVER DO CARRINHO -->
+                                        <td><div onclick="removerItem(3)" class="circle-remove">-</div></td>
+                                        <!-- REMOVER PRODUTO DA LISTA -->
+                                        <td>Total<br>R$<span id="total3">00,00</span></td>
+                                        <td><i onclick="removerProduto(3)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                        </div>
+                        <!-- VALOR TOTAL DOS ITENS ADICIONADOS AO CARRINHO -->
+                        <div class="s12 l6 offset-l6">
+                            <h2 class="blue-text text-darken-1 flow-text">Valor Total da Compra: R$<span id="valorTotalCompra">00,00</span></h2>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <!-- FINALIZA A COMPRA E RESETA O CARRINHO -->
+                    <div class="col s12 l4 offset-l4">
+                        <button class="btn waves-light waves-effect red white-text" onclick="finalizarCompra()">FINALIZAR COMPRA</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
