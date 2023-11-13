@@ -22,21 +22,38 @@
             overflow-x: auto;
         }
 
-        ul.menu-bar li {
-            margin: 0 5px;
-        }
+ul.menu-bar li {
+    margin: 0 5px; /* Espaçamento entre os itens do menu */
+}
 
-        ul.menu-bar li a {
-            display: block;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 10px;
-            text-decoration: none;
-        }
+ul.menu-bar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px; /* Reduza o tamanho dos itens do menu */
+    text-decoration: none;
+}
 
-        ul.menu-bar li a:hover {
-            background-color: #555;
-        }
+ul.menu-bar li a:hover {
+    background-color: #555;
+}
+
+ul {
+    text-align: left;
+}
+
+h2,
+p {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
 
         body {
             font-family: Arial, sans-serif;
