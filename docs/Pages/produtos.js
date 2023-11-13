@@ -64,3 +64,4 @@ function finalizarCompra() {
 	alert('Obrigada pela compra, ' + nome + '!');
 	document.location.reload(true);
 }
+

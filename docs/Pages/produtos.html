@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="produtos.css">
-    <link href="./protuto-materialize.css" type="text/css" rel="stylesheet">
+    <link href="./protuto-materialize.css" type="text/css" rel="produtos.css">
     <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
     <script src="./produtos.js"></script>
 </head>
@@ -26,16 +26,17 @@
     </header>
 
     <main>
-        <script type="text/javascript" src="./produtos.js"></script>
+        <script type="text/javascript" src="produtos.js"></script>
 
         <div class="container center">
             <form>
                 <div class="row">
-                    <fieldset style="border: 1px solid lightgrey; padding: 1em">
+                    <fieldset style="border: 1px solid lightgrey; padding: 1em"> 
                         <div class="col s10 l12">
                             <!-- PRODUTOS -->
                             <table class="responsive-table center">
                                 <tbody id="carrinho">
+
                                     <tr class="center" id="produto1">
                                         <td><img width="100px" src="img/computer.png"></td>
                                         <td>Computador<br>R$500,00</td>
@@ -44,41 +45,45 @@
                                         <td>
                                             <p id="quantidade1">0</p>
                                         </td>
-                                        <!-- REMOVER DO CARRINHO -->
+                                        
                                         <td><div onclick="removerItem(1)" class="circle-remove">-</div></td>
                                         <td>
                                             Total<br>R$<span id="total1">00,00</span>
                                         </td>
-                                        <!-- REMOVER PRODUTO DA LISTA -->
+                                        
                                         <td><i onclick="removerProduto(1)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
                                     </tr>
-                                    <tr id="produto2" id="produto2">
+                                        <tr id="produto2" id="produto2">
                                         <td><img width="100px" src="img/plant.png"></td>
                                         <td>Planta<br>R$5,00</td>
-                                        <!-- ADICIONAR AO CARRINHO -->
+
+                                    
                                         <td><div onclick="adicionarItem(2)" class="circle-add">+</div></td>
                                         <td>
                                             <p id="quantidade2">0</p>
                                         </td>
-                                        <!-- REMOVER DO CARRINHO -->
+
+                                        
                                         <td><div onclick="removerItem(2)" class="circle-remove">-</div></td>
                                         <td>
                                             Total<br>R$<span id="total2">00,00</span>
                                         </td>
-                                        <!-- REMOVER PRODUTO DA LISTA -->
+
+                                        
                                         <td><i onclick="removerProduto(2)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
                                     </tr>
-                                    <tr id="produto3" id="produto3">
+                                        <tr id="produto3" id="produto3">
                                         <td><img width="100px" src="img/lightsaber.png"></td>
                                         <td>Lightsaber<br>R$3000,00</td>
-                                        <!-- ADICIONAR AO CARRINHO -->
+
+                                      
                                         <td><div onclick="adicionarItem(3)" class="circle-add">+</div></td>
                                         <td>
                                             <p id="quantidade3">0</p>
                                         </td>
-                                        <!-- REMOVER DO CARRINHO -->
+                                        
                                         <td><div onclick="removerItem(3)" class="circle-remove">-</div></td>
-                                        <!-- REMOVER PRODUTO DA LISTA -->
+                                       
                                         <td>Total<br>R$<span id="total3">00,00</span></td>
                                         <td><i onclick="removerProduto(3)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
                                     </tr>
@@ -92,7 +97,7 @@
                         </div>
                     </fieldset>
                     <br>
-                    <!-- FINALIZA A COMPRA E RESETA O CARRINHO -->
+                     FINALIZA A COMPRA E RESETA O CARRINHO 
                     <div class="col s12 l4 offset-l4">
                         <button class="btn waves-light waves-effect red white-text" onclick="finalizarCompra()">FINALIZAR COMPRA</button>
                     </div>
@@ -101,5 +106,5 @@
         </div>
     </main>
 </body>
-<script src = "docs/BackEnd/produtos.js"></script>
+<script src = "produtos.js"></script>
 </html>

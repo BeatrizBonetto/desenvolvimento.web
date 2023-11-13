@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/*<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="produtos.css">
     <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
-    <script src="./produtos.js"></script>
-    <style>
+    <script src=".produtos.js"></script>
+    <style>*/
         /* Estilos para a barra de menus */
         ul.menu-bar {
             list-style-type: none;
@@ -114,15 +114,19 @@
             transition: background-color 0.3s;
         }
 
-        .circle-add:hover,
-        .circle-remove:hover {
+        .circle-add:hover{
             background-color: #4cae4c;
+
         }
-    </style>
+        
+        .circle-remove:hover {
+            background-color: #d9534f;
+        }
+    /*</style>
 </head>
-<body>
-    <!-- Barra de menus -->
-    <ul class="menu-bar">
+<body>*/
+    /*<!-- Barra de menus -->*/
+    /*<ul class="menu-bar">
         <li><a href="../index.html">Início</a></li>
         <li><a href="./produtos.html">Produtos</a></li>
         <li><a href="./orcamento.html">Orçamento</a></li>
@@ -208,4 +212,4 @@
         <p>&copy; 2023 Casa dos Pãezinhos</p>
     </footer>
 </body>
-</html>
+</html>*/
