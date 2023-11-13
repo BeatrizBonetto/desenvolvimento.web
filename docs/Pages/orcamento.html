@@ -13,66 +13,68 @@
     <!-- Barra de menus -->
     <ul class="menu-bar">
         <li><a href="../index.html">Início</a></li>
-       <li><a href="./produtos.html">Produtos</a></li>
+        <li><a href="./produtos.html">Produtos</a></li>
         <li><a href="./orcamento.html">Orçamento</a></li>
         <li><a href="./informacoes.html">Informações</a></li>
         <li><a href="./autores.html">Autores</a></li>
     </ul>
-      <!-- Fim da barra de menus -->
+    <!-- Fim da barra de menus -->
 
     <div class="container my-5">
-        
+
         <div class="text-center">
             <img src="https://github.com/BeatrizBonetto/desenvolvimento_web/blob/main/docs/logo%20paozinho.jpeg?raw=true"
                 alt="Logo minimalista para utilização na capa do projeto" class="img-fluid">
         </div>
-    <p>&#128241; Solicite seu orçament via Whatsapp <a href="https://wa.me/55191234567890">Clique aqui</a> para mais informações</p>
-    <p>ou</p>
-            </head>
-            <body>
-                <p>Preencha o formulário para solicitar um orçamento.</p>
+        <p>&#128241; Solicite seu orçament via Whatsapp <a href="https://wa.me/55191234567890">Clique aqui</a> para mais
+            informações</p>
+        <p>ou</p>
+        </head>
 
-    <form action="email.php" method="post">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" required>
+        <body>
+            <p>Preencha o formulário para solicitar um orçamento.</p>
 
-        <label for="telefone">Telefone</label>
-        <input type="text" name="telefone" id="telefone" required>
+            <form action="email.php" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
 
-        <label for="data-ride">Data da retirada</label>
-        <input type="date" name="date" id="date" required>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
 
-        <label for="email">Entrega ou retirada</label>
-        <select name="recebimento">
-            <option value="-">-</option>
-            <option value="Entrega">Entrega</option>
-            <option value="Retirada">Retirada</option>
-            </select>
-            <label for="endereço">Endereço</label>
-            <input type="text" name="endereço" id="endereço" required>
+                <label for="data-ride">Data da retirada</label>
+                <input type="date" name="date" id="date" required>
 
-            <p>Precisa de descartáveis?</p>
-<form method="post" action="cadastrar-dados.php">
-<input type="checkbox" name="info[]" value="win" />
-Copos
-<br />
-<input type="checkbox" name="info[]" value="word" />
-Pratos
-<br />
-<input type="checkbox" name="info[]" value="excel" />
-Talheres
-<br />
-<input type="checkbox" name="info[]" value="net" />
-Guardanapos
-<br /><br />
+                <label for="email">Entrega ou retirada</label>
+                <select name="recebimento">
+                    <option value="-">-</option>
+                    <option value="Entrega">Entrega</option>
+                    <option value="Retirada">Retirada</option>
+                </select>
+                <label for="endereço">Endereço</label>
+                <input type="text" name="endereço" id="endereço" required>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" required>
+                <p>Precisa de descartáveis?</p>
+                <form method="post" action="cadastrar-dados.php">
+                    <input type="checkbox" name="info[]" value="win" />
+                    Copos
+                    <br />
+                    <input type="checkbox" name="info[]" value="word" />
+                    Pratos
+                    <br />
+                    <input type="checkbox" name="info[]" value="excel" />
+                    Talheres
+                    <br />
+                    <input type="checkbox" name="info[]" value="net" />
+                    Guardanapos
+                    <br /><br />
 
-        <label for="pedido">Pedido</label>
-        <textarea id="pedido" name="pedido" rows="4" required></textarea>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
 
-        <input type="submit" value="Enviar orçamento">
-    </form>
-        <script src = "docs/BackEnd/orcamento.js"></script>
-            </body>
+                    <label for="pedido">Pedido</label>
+                    <textarea id="pedido" name="pedido" rows="4" required></textarea>
+
+                    <input type="submit" value="Enviar orçamento">
+                </form>
+                <script src="orcamento.js"></script>
+        </body>
