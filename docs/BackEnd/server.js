@@ -1,4 +1,43 @@
-const express = require('express');
+//import { openDb } from './configDB.js';
+import { createTable, insertUsuario, updateUsuario } from './controller/usuario.js';
+
+
+import express from 'express';
+const app = express();
+app.use(express.json());
+
+createTable();
+
+app.get('/', function (req, res) {
+  res.send("olá mundo");
+});
+
+app.post('/usuario/trocar-nome', function (req, res) {
+  insertUsuario(req.body);
+  res.json({
+    "statusCode": 200
+  })
+
+});
+
+app.put('/usuario/trocar-nome', function (req, res) {
+  if (req.body && !req.body.id) {
+    res.json({
+      "statusCode": "400",
+      "msg": "Você precisa informar um id"
+    })
+  } else {
+    updateUsuario(req.body);
+    res.json({
+      "statusCode": 200
+    })
+
+  }
+});
+
+app.listen(3000, () => console.log("rodando."))
+
+/*const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -52,4 +91,4 @@ function calcularValorTotalCompra() {
 // Inicialização do servidor
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
-});
+});*/
