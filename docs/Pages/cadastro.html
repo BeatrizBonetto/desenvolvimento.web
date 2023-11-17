@@ -20,6 +20,8 @@
         <body>
             <p>Preencha o formulário para se cadastrar e realizar pedidos online.</p>
 
+            <p>Dados pessoais</p>
+
             <form action="nome.php" method="post">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required>
@@ -34,9 +36,31 @@
                 <label for="data-ride">Data de nascimento</label>
                 <input type="date" name="date" id="date" required>
 
-                <label for="endereço">Endereço</label>
-                <input type="text" name="endereço" id="endereço" required>
+                <p>Dados para entrega</p>
 
+                <label for="CEP">CEP</label>
+                <input type="number" name="CEP" id="CEP" required>
+
+                <label for="rua">Rua</label>
+                <input type="text" name="Rua" id="Rua" required>
+
+                <label for="Número">Número</label>
+                <input type="number" name="Número" id="Número" size="6" required>
+
+                <label for="Bairro">Bairro</label>
+                <input type="text" name="Bairro" id="Bairro" required>
+
+                <label for="Cidade">Cidade</label>
+                <input type="text" name="Cidade" id="Cidade" required>
+
+                <label for="Estado">Estado</label>
+                <input type="text" name="Estado" id="Estado" required>
+
+                <p>Login</p>
+
+                <label for="Usuário">Usuário</label>
+                <input type="text" name="Usuário" id="Usuário" required>
+                
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha" required>
                
