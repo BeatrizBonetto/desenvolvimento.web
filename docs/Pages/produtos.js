@@ -1,6 +1,6 @@
 // Definir variáveis universais
 var valorTotal = [0, 0, 0, 0];
-var valorProduto = [0, 500, 5, 3000];
+var valorProduto = [0, 5.50, 2.85, 8.00];
 var qtd = [0, 0, 0, 0];
 
 // Trocar o nome pelo inserido no login

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="produtos.css">
-    <link href="./protuto-materialize.css" type="text/css" rel="produtos.css">
+    <link href="./produtos.css" type="text/css" rel="produtos.css">
     <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
     <script src="./produtos.js"></script>
 </head>
@@ -21,8 +21,10 @@
     <!-- Fim da barra de menus -->
 
     <header>
-        <h1>Restaurante do Exemplo</h1>
-        <p>Um sabor para cada ocasião</p>
+        <div class="text-center">
+            <img src="https://github.com/BeatrizBonetto/desenvolvimento_web/blob/main/docs/logo%20paozinho.jpeg?raw=true"
+                alt="Logo minimalista para utilização na capa do projeto" class="img-fluid">
+        </div>
     </header>
 
     <main>
@@ -38,8 +40,8 @@
                                 <tbody id="carrinho">
 
                                     <tr class="center" id="produto1">
-                                        <td><img width="100px" src="img/computer.png"></td>
-                                        <td>Computador<br>R$500,00</td>
+                                        <td><img width="100px" src="../pao de queijo.jpeg"></td>
+                                        <td>Pão de queijo (100g) <br>R$5,50</td>
                                         <!-- ADICIONAR AO CARRINHO -->
                                         <td><div onclick="adicionarItem(1)" class="circle-add">+</div></td>
                                         <td>
@@ -54,8 +56,8 @@
                                         <td><i onclick="removerProduto(1)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
                                     </tr>
                                         <tr id="produto2" id="produto2">
-                                        <td><img width="100px" src="img/plant.png"></td>
-                                        <td>Planta<br>R$5,00</td>
+                                        <td><img width="100px" src="../pao_frances_na_cesta.jpg"></td>
+                                        <td>Pão francês (100g) <br>R$2,85</td>
 
                                     
                                         <td><div onclick="adicionarItem(2)" class="circle-add">+</div></td>
@@ -73,8 +75,8 @@
                                         <td><i onclick="removerProduto(2)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
                                     </tr>
                                         <tr id="produto3" id="produto3">
-                                        <td><img width="100px" src="img/lightsaber.png"></td>
-                                        <td>Lightsaber<br>R$3000,00</td>
+                                        <td><img width="100px" src="../suco de laranja.jpg"></td>
+                                        <td>Suco de laranja (500ml) <br>R$8,00</td>
 
                                       
                                         <td><div onclick="adicionarItem(3)" class="circle-add">+</div></td>
@@ -97,7 +99,6 @@
                         </div>
                     </fieldset>
                     <br>
-                     FINALIZA A COMPRA E RESETA O CARRINHO 
                     <div class="col s12 l4 offset-l4">
                         <button class="btn waves-light waves-effect red white-text" onclick="finalizarCompra()">FINALIZAR COMPRA</button>
                     </div>
