@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="produtos.css">
     <link href="./produtos.css" type="text/css" rel="produtos.css">
     <title>Projeto HTML 2023 - Padaria Casa dos Pãezinhos</title>
-    <script src="./produtos.js"></script>
+    <script src="./produtos.js" defer></script>
 </head>
 <body>
     <!-- Barra de menus -->
     <ul class="menu-bar">
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="./produtos.html">Carrinho</a></li>
-        <li><a href="./informacoes.html">Informações</a></li>
-        <li><a href="./autores.html">Autores</a></li>
-        <li><a href="./cadastro.html">Cadastro</a></li>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./Pages/produtos.html">Carrinho</a></li>
+        <li><a href="./Pages/informacoes.html">Informações</a></li>
+        <li><a href="./Pages/autores.html">Autores</a></li>
+        <li><a href="./Pages/cadastro.html">Cadastro</a></li>
     </ul>
     <!-- Fim da barra de menus -->
 
@@ -28,8 +28,6 @@
     </header>
 
     <main>
-        <script type="text/javascript" src="produtos.js"></script>
-
         <div class="container center">
             <form>
                 <div class="row">
@@ -55,7 +53,7 @@
                                         
                                         <td><i onclick="removerProduto(1)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
                                     </tr>
-                                        <tr id="produto2" id="produto2">
+                                    <tr id="produto2">
                                         <td><img width="100px" src="../pao_frances_na_cesta.jpg"></td>
                                         <td>Pão francês (100g) <br>R$2,85</td>
 
@@ -74,7 +72,7 @@
                                         
                                         <td><i onclick="removerProduto(2)" class="material-icons blue-text text-darken-1" style="cursor: pointer">delete</i></td>
                                     </tr>
-                                        <tr id="produto3" id="produto3">
+                                    <tr id="produto3">
                                         <td><img width="100px" src="../suco de laranja.jpg"></td>
                                         <td>Suco de laranja (500ml) <br>R$8,00</td>
 
@@ -100,12 +98,11 @@
                     </fieldset>
                     <br>
                     <div class="col s12 l4 offset-l4">
-                        <button class="btn waves-light waves-effect red white-text" onclick="finalizarCompra()">FINALIZAR COMPRA</button>
+                        <button onclick="enviarInformacoes()">Finalizar</button>
                     </div>
                 </div>
             </form>
         </div>
     </main>
 </body>
-<script src = "produtos.js"></script>
 </html>
