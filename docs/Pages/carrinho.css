@@ -146,6 +146,20 @@ h4 {
     background-color: #d9534f;
 }
 
+.botão {
+    justify-content: center;
+    border-bottom: #000;
+    margin-top: 5px;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    background-color: #52ed71;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 /*</style>
 </head>
 <body>*/
