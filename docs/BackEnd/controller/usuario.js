@@ -42,7 +42,7 @@ export async function updateUsuario(req, res){
 }
 
 export async function deletetUsuario(req, res){
-    let usuario = req.body.id;
+    let id = req.body.id;
      openDb().then(db=>{
          db.get('DELETE FROM usuario WHERE id=?', [id])
         .then(res=>res)
